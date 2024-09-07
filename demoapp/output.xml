@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.11.0 on win32)" generated="2024-09-08T01:22:16.639208" rpa="false" schemaversion="5">
+<suite id="s1" name="No7 Invalid Phone Number" source="e:\year3_1\qa\LAB12_UATTESTING\lab12_UAT_Testing\demoapp\event_tests\no7_invalid_phone_number.robot">
+<test id="s1-t1" name="Open Event Registration Page" line="7">
+<kw name="Open Browser To Event Registration Page" owner="resource">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-08T01:22:16.779823" level="INFO">Opening browser 'Firefox' to base url 'http://localhost:7272/Lab12/Registration.html'.</msg>
+<arg>${REGISTER URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-08T01:22:16.779823" elapsed="8.990893"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-08T01:22:25.770716" elapsed="0.262926"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-09-08T01:22:26.033642" elapsed="0.000000"/>
+</kw>
+<kw name="Set Screenshot Directory" owner="SeleniumLibrary">
+<arg>${SCREENSHOT_DIR}</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<status status="PASS" start="2024-09-08T01:22:26.033642" elapsed="0.000000"/>
+</kw>
+<kw name="Event Registration Page Should Be Open" owner="resource">
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-09-08T01:22:26.542021" level="INFO">Page title is 'Event Registration'.</msg>
+<arg>Event Registration</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-09-08T01:22:26.033642" elapsed="0.508379"/>
+</kw>
+<status status="PASS" start="2024-09-08T01:22:26.033642" elapsed="0.508379"/>
+</kw>
+<status status="PASS" start="2024-09-08T01:22:16.779823" elapsed="9.762198"/>
+</kw>
+<status status="PASS" start="2024-09-08T01:22:16.779823" elapsed="9.762198"/>
+</test>
+<test id="s1-t2" name="Invalid Phone Number" line="10">
+<kw name="Fill Registration Form" owner="resource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-08T01:22:26.542021" level="INFO">Typing text 'Somsri' into text field 'id=firstname'.</msg>
+<arg>id=firstname</arg>
+<arg>${first_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-08T01:22:26.542021" elapsed="1.562300"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-08T01:22:28.104321" level="INFO">Typing text 'Sodsai' into text field 'id=lastname'.</msg>
+<arg>id=lastname</arg>
+<arg>${last_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-08T01:22:28.104321" elapsed="1.515455"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-08T01:22:29.619776" level="INFO">Typing text 'CS KKU' into text field 'id=organization'.</msg>
+<arg>id=organization</arg>
+<arg>${organization}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-08T01:22:29.619776" elapsed="1.514089"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-08T01:22:31.133865" level="INFO">Typing text 'somsri@kkumail.com' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-08T01:22:31.133865" elapsed="1.515789"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-08T01:22:32.649654" level="INFO">Typing text '1234' into text field 'id=phone'.</msg>
+<arg>id=phone</arg>
+<arg>${phone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-08T01:22:32.649654" elapsed="1.518608"/>
+</kw>
+<arg>Somsri</arg>
+<arg>Sodsai</arg>
+<arg>CS KKU</arg>
+<arg>somsri@kkumail.com</arg>
+<arg>1234</arg>
+<status status="PASS" start="2024-09-08T01:22:26.542021" elapsed="7.626241"/>
+</kw>
+<kw name="Submit Registration" owner="resource">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-08T01:22:34.168262" level="INFO">Clicking button 'id=registerButton'.</msg>
+<arg>id=registerButton</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-08T01:22:34.168262" elapsed="1.739927"/>
+</kw>
+<status status="PASS" start="2024-09-08T01:22:34.168262" elapsed="1.739927"/>
+</kw>
+<kw name="Event Registration Page Should Be Open" owner="resource">
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-09-08T01:22:36.411730" level="INFO">Page title is 'Event Registration'.</msg>
+<arg>Event Registration</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-09-08T01:22:35.908189" elapsed="0.503541"/>
+</kw>
+<status status="PASS" start="2024-09-08T01:22:35.908189" elapsed="0.503541"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-09-08T01:22:38.950209" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="img_test/selenium-screenshot-3.png"&gt;&lt;img src="img_test/selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-09-08T01:22:38.950209" level="FAIL">Page should have contained text 'Please enter a valid phone number, e.g., 081-234-5678, 081 234 5678, or 081.234.5678' but did not.</msg>
+<arg>Please enter a valid phone number, e.g., 081-234-5678, 081 234 5678, or 081.234.5678</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2024-09-08T01:22:36.411730" elapsed="2.538479">Page should have contained text 'Please enter a valid phone number, e.g., 081-234-5678, 081 234 5678, or 081.234.5678' but did not.</status>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<arg>invalid_phone_number_error.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2024-09-08T01:22:38.950209" elapsed="0.000000"/>
+</kw>
+<doc>Test case for providing an invalid phone number.</doc>
+<status status="FAIL" start="2024-09-08T01:22:26.542021" elapsed="12.408188">Page should have contained text 'Please enter a valid phone number, e.g., 081-234-5678, 081 234 5678, or 081.234.5678' but did not.</status>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-08T01:22:38.950209" elapsed="3.179703"/>
+</kw>
+<doc>Test event registration with invalid phone number.</doc>
+<status status="FAIL" start="2024-09-08T01:22:16.639208" elapsed="25.490704"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="1" skip="0" id="s1" name="No7 Invalid Phone Number">No7 Invalid Phone Number</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
